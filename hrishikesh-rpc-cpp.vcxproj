@@ -139,7 +139,49 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="discord\achievement_manager.cpp" />
+    <ClCompile Include="discord\activity_manager.cpp" />
+    <ClCompile Include="discord\application_manager.cpp" />
+    <ClCompile Include="discord\core.cpp" />
+    <ClCompile Include="discord\image_manager.cpp" />
+    <ClCompile Include="discord\lobby_manager.cpp" />
+    <ClCompile Include="discord\network_manager.cpp" />
+    <ClCompile Include="discord\overlay_manager.cpp" />
+    <ClCompile Include="discord\relationship_manager.cpp" />
+    <ClCompile Include="discord\storage_manager.cpp" />
+    <ClCompile Include="discord\store_manager.cpp" />
+    <ClCompile Include="discord\types.cpp" />
+    <ClCompile Include="discord\user_manager.cpp" />
+    <ClCompile Include="discord\voice_manager.cpp" />
     <ClCompile Include="hrishikesh-rpc-cpp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="discord\achievement_manager.h" />
+    <ClInclude Include="discord\activity_manager.h" />
+    <ClInclude Include="discord\application_manager.h" />
+    <ClInclude Include="discord\core.h" />
+    <ClInclude Include="discord\discord.h" />
+    <ClInclude Include="discord\event.h" />
+    <ClInclude Include="discord\ffi.h" />
+    <ClInclude Include="discord\image_manager.h" />
+    <ClInclude Include="discord\lobby_manager.h" />
+    <ClInclude Include="discord\network_manager.h" />
+    <ClInclude Include="discord\overlay_manager.h" />
+    <ClInclude Include="discord\relationship_manager.h" />
+    <ClInclude Include="discord\storage_manager.h" />
+    <ClInclude Include="discord\store_manager.h" />
+    <ClInclude Include="discord\types.h" />
+    <ClInclude Include="discord\user_manager.h" />
+    <ClInclude Include="discord\voice_manager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="dll\discord_game_sdk.dll">
+      <DeploymentContent>true</DeploymentContent>
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="dll\discord_game_sdk.dll.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
